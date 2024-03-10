@@ -7,21 +7,24 @@ import Footer from "./components/Footer";
 import Sidebar from "./components/Sidebar";
 import ProductProvider from "./contexts/ProductContext";
 import SidebarProvider from "./contexts/SidebarContext";
+import CartProvider from "./contexts/CartContext";
 
 const App = () => {
   return (
     <div className="overflow-hidden">
       <Router>
         <SidebarProvider>
-          <ProductProvider>
-            <Header />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/product/:id" element={<ProductDetails />} />
-            </Routes>
-            <Sidebar />
-            <Footer />
-          </ProductProvider>
+          <CartProvider>
+            <ProductProvider>
+              <Header />
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/product/:id" element={<ProductDetails />} />
+              </Routes>
+              <Sidebar />
+              <Footer />
+            </ProductProvider>
+          </CartProvider>
         </SidebarProvider>
       </Router>
     </div>
