@@ -18,7 +18,6 @@ const App = () => {
           <CartProvider>
             <ProductProvider>
               <Header />
-              <Hero />
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/product/:id" element={<ProductDetails />} />

@@ -32,7 +32,7 @@ const Header = () => {
             <img className="w-[40px]" src={Logo} alt="Logo" />
           </div>
         </Link>
-        <div>Header</div>
+        <div></div>
         <div
           onClick={() => setIsOpen(!isOpen)}
           className="cursor-pointer flex relative"

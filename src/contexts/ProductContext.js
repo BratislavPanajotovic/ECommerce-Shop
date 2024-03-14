@@ -1,5 +1,5 @@
 import React, { createContext, useState, useEffect } from "react";
-
+import Product from "../components/Product";
 export const ProductContext = createContext();
 
 const ProductProvider = ({ children }) => {
