@@ -25,12 +25,12 @@ const Home = () => {
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="flex flex-1 justify-center items-center mb-8 lg:mb-0">
-            <img
-              onClick={() => <ProductDetails />}
-              className="max-w-[200px] lg:max-w-sm"
-              src={image}
-              alt=""
-            />
+            <Link
+              to={`/product/3`}
+              className="w-12 h-12 bg-white flex justify-center items-center text-primary drop-shadow-xl"
+            >
+              <img className="max-w-[200px] lg:max-w-sm" src={image} alt="" />
+            </Link>
           </div>
           <div className="flex-1 text-center lg:text-left">
             {" "}
@@ -38,9 +38,11 @@ const Home = () => {
               {title}
             </h1>{" "}
             <p className="mb-8">{description}</p>
-            <button className="bg-neutral-900 py-4 px-8 text-white">
-              SHOW ALL PRODUCTS
-            </button>
+            <Link to={"allProducts"}>
+              <button className="bg-neutral-900 py-4 px-8 text-white">
+                SHOW ALL PRODUCTS
+              </button>
+            </Link>
           </div>
         </div>
       </div>

@@ -9,6 +9,7 @@ import Sidebar from "./components/Sidebar";
 import ProductProvider from "./contexts/ProductContext";
 import SidebarProvider from "./contexts/SidebarContext";
 import CartProvider from "./contexts/CartContext";
+import Products from "./pages/Products";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
               <Header />
               <Routes>
                 <Route path="/" element={<Home />} />
+                <Route path="/allProducts" element={<Products />} />
                 <Route path="/product/:id" element={<ProductDetails />} />
               </Routes>
               <Sidebar />
