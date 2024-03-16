@@ -18,7 +18,7 @@ const Home = () => {
   }
   const { title, price, description, image } = product;
   return (
-    <section className="pt-32 pb-12 lg:py-32 mob-L:h-[650px] mob-M:h-[650px] mob-S:h-[700px] lg:h-[650px] 4K:h-[1520px] 1K:h-[1220px] h-screen flex items-center md:my-10">
+    <section className="pt-32 pb-12 lg:py-32 mob-L:h-[650px] mob-M:h-[650px] mob-S:h-[700px] lg:h-[700px] 4K:h-[1520px] 1K:h-[1020px] h-screen flex items-center md:my-10">
       <div className="container mx-auto ">
         <div className="flex flex-col lg:flex-row items-center   ">
           <div className="flex flex-1 justify-center items-center mob-S:py-12 md:py-2 md:text-left mb-8 lg:mb-0">
