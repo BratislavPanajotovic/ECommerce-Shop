@@ -26,19 +26,19 @@ const Sidebar = () => {
           <IoMdArrowForward className="text-2xl" />
         </div>
       </div>
-      <div className="flex flex-col gap-y-2 h-[520px] lg:h-[500px] overflow-y-auto overflow-x-hidden border-b  2xl:h-[600px] 4K:h-[780px] ">
+      <div className="flex flex-col gap-y-2 h-[520px] mob-L:h-[300px] mob-M:h-[300px] mob-S:h-[300px] 4K:h-[1220px] lg:h-[300px] xl:h-[500px] overflow-y-auto overflow-x-hidden border-b  2xl:h-[600px]  ">
         {cart.map((item) => {
           return <CartItem item={item} key={item.id} />;
         })}
       </div>
-      <div className="flex flex-col gap-y-3 py-4 mt-4">
-        <div className="bg-sky-600 flex w-full justify-between items-center">
-          <div className="uppercase font-semibold">
+      <div className="flex flex-col gap-y-3 py-4 mt-4 ">
+        <div className="bg-sky-600 flex w-full justify-between items-center  ">
+          <div className="uppercase font-semibold ">
             <span>Total: </span> {parseFloat(total).toFixed(2)}
           </div>
           <div
             onClick={clearCart}
-            className="cursor-pointer py-4 bg-red-500 text-white w-12 h-12 flex justify-center items-center text-xl "
+            className="cursor-pointer py-4 bg-red-500 text-white w-12 h-12 flex justify-center items-center text-xl  "
           >
             {" "}
             <FiTrash2 />
@@ -46,7 +46,7 @@ const Sidebar = () => {
         </div>
         <Link
           to="/"
-          className="bg-gray-200 flex p-4 justify-center items-center text-primary w-full font-medium"
+          className="bg-gray-200 flex p-4 justify-center items-center text-primary w-full font-medium  "
         >
           View cart
         </Link>
