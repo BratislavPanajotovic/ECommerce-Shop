@@ -16,7 +16,7 @@ const Home = () => {
       </section>
     );
   }
-  const { title, price, description, image } = product;
+  const { title, description, image } = product;
   return (
     <section className="pt-32 pb-12 lg:py-32 mob-L:h-[650px] mob-M:h-[650px] mob-S:h-[700px] lg:h-[700px] 4K:h-[1520px] 1K:h-[1020px] h-screen flex items-center md:my-10">
       <div className="container mx-auto ">
