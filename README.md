@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+# Check it out now! :)
+
+<a> https://e-commerce-webshop.netlify.app/ </a>
+
 # What does it do?
 
 The project is an Ecommerce-Shop built using React, where users can browse various products, add items to their cart, view product details, and proceed to checkout. It incorporates multiple components such as Header, Footer, Sidebar, Product, and CartItem to create a seamless user experience. Contexts like CartContext, ProductContext, and SidebarContext are utilized for managing state and sharing data between components efficiently. Additionally, the project includes different pages like Home, Products, ProductDetails, CartPage, ContactUs, PrivacyPolicy, TermsOfService, and PageNotFound, each serving a specific purpose within the application.
