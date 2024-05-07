@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-import WomanImg from "../img/woman_hero.png";
 import Product from "../components/Product";
 import { Link } from "react-router-dom";
 import { ProductContext } from "../contexts/ProductContext";
